@@ -13,7 +13,6 @@ public class Main {
     }
     public static void main(String[] args) {
         B obj = new B();
-        System.out.println(obj.meth()); // Cannot call method of A as it gets Overridden for B
         System.out.println(obj.meth()); // method has been overridden by B
     }
 }
