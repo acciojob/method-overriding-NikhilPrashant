@@ -14,7 +14,9 @@ class B extends A {
 }
 public class Main {
     public static void main(String[] args) {
-        B obj = new B();
-        obj.meth(); // method has been overridden by B
+        A obj = new A();
+        System.out.println(obj.meth()); // method of A
+        B obj1 = new B();
+        System.out.println(obj1.meth()); // method has been overridden by B
     }
 }
